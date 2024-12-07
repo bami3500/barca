@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #c8102e;
+  color: white;
+  padding: 1.45rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Remove bullets from the list */
+.navbar-items {
+  list-style-type: none !important; /* Removes the bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Makes the list items horizontal */
+  gap: 1rem; /* Adds spacing between items */
+}
+
+/* Optional: Styling for the links */
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white; /* Change to desired color */
+}
+
+.navbar-right {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
