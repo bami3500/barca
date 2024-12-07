@@ -1,0 +1,34 @@
+.faq {
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0; /* Initially hidden */
+  overflow: hidden; /* Hide content that doesn't fit */
+  transition: max-height 0.2s ease-out, opacity 0.4s ease-out; /* Smooth easing */
+  opacity: 0; /* Fully transparent when hidden */
+  padding: 0 10px; /* Adjust padding to fit your design */
+}
+
+.faq-answer.active {
+  max-height: 200px; /* Set a reasonable maximum height */
+  opacity: 1; /* Fully visible when active */
+  padding: 10px; /* Add padding when active */
+}
